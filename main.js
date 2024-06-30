@@ -1,4 +1,13 @@
-import { createKnightGraph } from "./KnightGraph.js";
+import { reconstitutePath, solve , displayPath} from "./path.js";
 
-const knightGraph = createKnightGraph();
-console.log(knightGraph[[3, 4]]);
+
+function knightMoves(start , end){
+    var path = solve(start,end);
+    path = reconstitutePath(path)
+    displayPath(path)
+}
+
+
+const start = [0,0];
+const end = [3,3];
+knightMoves(start , end)

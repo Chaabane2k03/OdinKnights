@@ -28,3 +28,5 @@ export function createKnightGraph(){
 
     return graph
 }
+
+
